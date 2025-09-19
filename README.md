@@ -61,3 +61,24 @@ Array
 )
 ?>
 ```
+
+## Find even numbers from array 
+
+```
+<?php
+
+$arr = [1, 2, 3, 4, 5, 6, 7,8 , 9];
+
+$even = array_filter($arr, fn($n) => $n % 2 == 0);
+print_r($even);
+
+// Output
+/*
+(
+    [1] => 2
+    [3] => 4
+    [5] => 6
+    [7] => 8
+)
+*/
+?>
