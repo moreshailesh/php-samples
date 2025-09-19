@@ -82,3 +82,28 @@ print_r($even);
 )
 */
 ?>
+```
+
+## Find HCF of two numbers
+
+```
+<?php
+// Recursive function to calculate HCF
+function findHCF($a, $b) {
+    if ($b == 0) {
+        return $a;
+    }
+    return findHCF($b, $a % $b);
+}
+
+// Example usage
+$num1 = 56;
+$num2 = 98;
+
+$hcf = findHCF($num1, $num2);
+
+echo "The HCF of $num1 and $num2 is: $hcf";
+?>
+// Output The HCF of 56 and 98 is: 14
+```
+
