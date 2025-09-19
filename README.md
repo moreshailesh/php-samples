@@ -107,3 +107,28 @@ echo "The HCF of $num1 and $num2 is: $hcf";
 // Output The HCF of 56 and 98 is: 14
 ```
 
+### Euclidean alogorithm
+
+```
+<?php
+// Function to calculate HCF using Euclidean algorithm
+function findHCF($a, $b) {
+    while ($b != 0) {
+        $temp = $b;
+        $b = $a % $b;
+        $a = $temp;
+    }
+    return $a;
+}
+
+// Example usage
+$num1 = 56;
+$num2 = 98;
+
+$hcf = findHCF($num1, $num2);
+
+echo "The HCF of $num1 and $num2 is: $hcf";
+?>
+```
+
+
